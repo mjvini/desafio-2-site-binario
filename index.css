@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    grid-column: 1fr;
+}
+
+header{
+    display: grid;
+    grid-row: 1fr;
+    background-color: black;
+}
+@font-face {
+    font-family: "honeyfont";
+    src: url(fonts/honey.ttf);
+}
+
+.logo{
+    font-family: "honeyfont";
+    color: yellow;
+}
