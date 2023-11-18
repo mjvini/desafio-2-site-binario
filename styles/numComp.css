@@ -335,8 +335,8 @@ a:hover{
 .speech-balloon {
     position: relative;
     height: auto;
-    max-width: 300px;
-    padding: 10px 15px;
+    max-width: 500px;
+    padding: 10px 20px;
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -346,12 +346,13 @@ a:hover{
     content: '';
     position: absolute;
     top: 50%;
-    left: -20px; /* Adjust the position to make it point to the left */
+    left: -20px;
     margin-top: -10px;
     border-width: 10px;
     border-style: solid;
     border-color: transparent #f0f0f0 transparent transparent;
 }
+
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------  FOORTER  ------------------------------------------------------------*/

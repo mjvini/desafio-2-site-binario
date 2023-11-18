@@ -1,11 +1,8 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the elements
+
     var speechBalloon = document.getElementById('speechBalloon');
     var textElement = document.getElementById('text');
 
-    // Array of texts to display
     var texts = [
         "Bzzz!  Zumbidos curiosos, amiguinhos! Vamos falar sobre a base decimal, que é como falamos os números no dia a dia. Vocês já devem estar acostumados...",
         "Na base decimal, usamos dez algarismos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Vamos ver o número 29, por exemplo...",
@@ -17,39 +14,31 @@ document.addEventListener('DOMContentLoaded', function () {
         "Não é legal ver como os números do nosso dia a dia funcionam? Vamos entender mais um pouco sobre eles no balãozinho debaixo! Bzzz!"
     ];
 
-    // Variables to keep track of the current text and letter index
     var currentTextIndex = 0;
     var currentLetterIndex = 0;
 
-    // Variable to store the timeout ID for animation
     var timeoutId;
 
-    // Function to update text with animation
     function updateText() {
-        // Check if there are more letters to display
         if (currentLetterIndex <= texts[currentTextIndex].length) {
-            // Update the text content with the current slice of the text
             textElement.textContent = texts[currentTextIndex].slice(0, currentLetterIndex);
-            // Increment the letter index for the next slice
             currentLetterIndex++;
-            // Set a timeout to call the function again after a delay
             timeoutId = setTimeout(updateText, 50);
         } else {
-            // If all letters are displayed, reset the letter index
             currentLetterIndex = 0;
+            if (currentTextIndex < texts.length - 1) {
+                currentTextIndex++;
+            } else {
+                 return;
+                // currentTextIndex = 0;
+            }
         }
     }
 
-    // Event listener for keypress to trigger text change
     document.addEventListener('keypress', function () {
-        // Clear the timeout to stop the animation
         clearTimeout(timeoutId);
-        // Change to the next text in the array
-        currentTextIndex = (currentTextIndex + 1) % texts.length;
-        // Start the text animation again
         updateText();
     });
 
-    // Initial start of the text animation when the page loads
     updateText();
 });
