@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+    
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 100%;
+}
+
+/*
+body{
+    display: grid;
+    grid-template-rows: 1fr 14fr 4fr;
+}
+*/
+
+@font-face {
+    font-family: "honeyfont";
+    src: url(fonts/honey.ttf);
+}
+
+@font-face {
+    font-family:"Poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+ }
+
+ @font-face {
+    font-family: "honeyfont2";
+    src: url(fonts/honey2.otf);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E1111;
+    height: 50px;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "honeyfont";
+    color: #0E1111;
+    margin-left: 10px;
+    width: 152px;
+    height: 38px;
+    
+}
+
+.logoTitulo{
+    margin-left: 10px;
+    color: #FBBA02;
+    font-family: "Poppins";
+    font-size: 25px;
+}
+.logoImagem{
+    background-color:#FBBA02;
+}
+
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Inter";
+    position:relative;
+    width: 506px;
+    height: 20px;
+    
+    
+}
+
+a{
+    color: #FBBA02;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.nossaEquipe{
+    font-family: "Inter";
+    font-size: 12px;
+    align-items: center;
+    width: 80px;
+    height: 15px;
+    
+}
+
+
+body{
+    width: 100%;
+    height: 1024px;
+    background-color: #FDBE33;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 834px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 996px;
+    height: 529px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.equipe-texto{
+    font-size: 40px;
+    font-family: "Poppins";
+}
+
+.equipe{
+    display: flex;
+    flex-direction: row;
+    width: 996px;
+    height: 317px;
+    justify-content: space-between;
+
+}
+.estudante{
+    display: flex;
+    width: 219px;
+    height: 317px;
+    border: 5px solid #0E1111;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-estudante{
+    width: 214px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.nome{
+    font-size: 15px;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curso-extensao{
+    font-size: 12px;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+.redes-sociais{
+    width: 84px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.link{
+    margin: 0px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0E1111;
+    height: 140px;
+    
+}
+
+.oferecimento{
+    display: flex;
+    flex-direction: row;
+    width: 313px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.promove{
+    color: #FBBA02;
+    text-align: center;
+    font-family: LED Dot-Matrix;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    
+}
+.ic{
+    color: #FBBA02;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
