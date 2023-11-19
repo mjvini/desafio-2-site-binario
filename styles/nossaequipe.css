@@ -18,6 +18,14 @@ body{
 }
 */
 
+body{
+    width: 100%;
+    height: 1024px;
+    background-color: #FDBE33;
+    
+    
+}
+
 @font-face {
     font-family: "honeyfont";
     src: url(fonts/honey.ttf);
@@ -98,12 +106,7 @@ a{
 }
 
 
-body{
-    width: 100%;
-    height: 1024px;
-    background-color: #FDBE33;
-    
-}
+
 
 .container{
     display: flex;
@@ -111,6 +114,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 834px;
+
+
+    background-image: url('/imagens/favo.png'),url('/imagens/favo.png'),url('/imagens/mini-abelha.png'),url('/imagens/mini-abelha.png'),url('/imagens/mini-abelha.png');
+    background-repeat:no-repeat, no-repeat, no-repeat;
+    background-size: auto,auto,auto,auto,auto;
+    background-position:0px -100px,1700px 500px,1566px 500px,280px 257px,321px 15px;
+    
+    
+
+    
+}
+
+.corpo{
+    height: 1024px;
 }
 
 .cards{
@@ -125,6 +142,7 @@ body{
 .equipe-texto{
     font-size: 40px;
     font-family: "Poppins";
+    font-weight: bold;
 }
 
 .equipe{
@@ -166,6 +184,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .curso-extensao{
