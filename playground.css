@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 14fr 4fr;
+}
+
+/*------------------------------------------ INICIO DO HEADER -----------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0E1111;
+}
+@font-face {
+    font-family: "honeyfont";
+    src: url(fonts/honey.ttf);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "honeyfont";
+    color: #0E1111;
+    margin-left: 10px;
+}
+.logoTitulo{
+    margin-left: 10px;
+    color: #FBBA02;
+}
+.logoImagem{
+    background-color:#FBBA02;
+}
+@font-face {
+    font-family: "honeyfont2";
+    src: url(fonts/honey2.otf);
+}
+nav{
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    display: inline-flex;
+    padding: 1px 20px;
+    align-items: flex-start;
+    gap: 75px;
+    font-family: "honeyfont2";
+    /*border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px #f0f,
+        0 0 140px 90px #0ff;*/
+    
+}
+a{
+    color: #FBBA02;
+    margin: 10px;
+    font-size: 20px;
+}
+
+a:hover{
+    /*color: white;*/
+    transform: scale(1.2);
+    
+    background-color: none;
+    box-shadow:
+        0 0 60px 2px #fff,
+        0 0 100px 5px rgb(251, 255, 0),
+        0 0 140px 7px rgb(255, 123, 0);
+}
+
+/*------------------------------  FIM DO HEADER -------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------  CORPO ---------------------------------------------------------------*/
+
+.corpo{
+    background-color: #FBBA02;
+}
+
+/*------------------------------ FIM CORPO ------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------  FOORTER  ------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 74px;
+    background: #0E1111;
+}
+.promove{
+    color: #FBBA02;
+    text-align: center;
+    font-family: LED Dot-Matrix;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.ic{
+    color: #FBBA02;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* PÁGINA PLAYGROUND */
+
+.container-introducao{
+    display: flex;
+    height: 425px;
+    justify-content: center;
+}
+
+.textoAbelha{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.container-texto{
+    height: 139px;
+    width: 486px;
+    margin-top: 143px;
+    vertical-align: middle;
+}
+
+.imagem-abelha{
+    height: 326px;
+    width: 327px;
+    margin-left: 57px;
+    margin-top: 52px;
+}
+
+.playground{
+    height: 425px;
+    border-style: solid;
+    border-color: #0E1111;
+    border-width: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.textotraduzido-container{
+    margin-right: 35px;
+    margin-left: 35px;
+    width: 412px;
+    height: 182px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: scroll;
+    overscroll-behavior: none;
+}
+
+.linguagem{
+    width: 412px;
+    height: 43px;
+    background-color: #0E1111;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #FBBA02;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 20px;
+    padding-top: 4px;
+}
+
+.textotraduzido{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.textinput{
+    width: 412px;
+    height: 139px;   
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    resize: none;
+    outline: none;
+}
+
+.botao-inverte{
+    background-color: #0E1111;
+    border-style: none;
+    border-radius: 20px;
+}
+
+
+.botao-inverte:hover{
+    /*color: white;*/
+    transform: scale(1.2);
+    
+    background-color: none;
+    box-shadow:
+        0 0 60px 2px #fff,
+        0 0 100px 5px rgb(251, 255, 0),
+        0 0 140px 7px rgb(255, 123, 0);
+}

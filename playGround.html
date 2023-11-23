@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="playground.css">
     <link href="https://fonts.cdnfonts.com/css/honey-bee-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/led-dot-matrix" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>    
+    <script src="playground.js"></script>
+
 </head>
 <body>
     <header>
@@ -20,10 +27,38 @@
         </nav>
     </header>
     <div class="corpo">
+        <div class="container-introducao">
+            <div class="container-texto">
+                <p class="textoAbelha">"ZzZzZz! Agora que você já conhece os números, que tal misturá-los com palavrinhas mágicas? 🐝✨"</p>
+            </div>
+            <img class="imagem-abelha"src="imagens/abelhaJoinha.png">
+        </div>
+        <div class="playground">
+            <div class="textotraduzido-container">
+                <div class="linguagem">
+                    <p id="linguagem1"> Binário </p>
+                </div>
+                <textarea type="text" class="textinput" id="textinput" placeholder="Digite aqui!" maxlength="1000"></textarea>
+            </div>
 
+            <div class="botao">
+                <button class="botao-inverte" id="botao-inverte">
+                    <img src="imagens/seta-inverte.svg">
+                </button>
+            </div>
+
+            <div class="textotraduzido-container">
+                <div class="linguagem">
+                    <p id="linguagem2"> Texto </p>
+                </div>
+                <idv class="textotraduzido" id="textotraduzido"> </idv>
+            </div>
+        </div>
     </div>
-    <footer>
 
+    <footer>
+        <h2 class="promove">PROMOVE</h2>
+        <h2 class="ic">IC/UFRJ</h2>
     </footer>
     <script src="index.js"></script> 
 </body>
