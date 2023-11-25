@@ -12,19 +12,26 @@
     <link href="https://fonts.cdnfonts.com/css/led-dot-matrix" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>    
     <script src="playground.js"></script>
-
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img class="logoImagem" src="imagens/Vector.svg" alt="pote de mel com abelha" width="30" height="30"> 
-            <h1 class="logoTitulo">Beenário</h1>
+        <div class="logo-menu">
+            <div class="logo">
+                <img class="logoImagem" src="imagens/Vector.svg" alt="pote de mel com abelha" width="30" height="30"> 
+                <h1 class="logoTitulo">Beenário</h1>
+            </div>
+            <div class="menu-container">
+                <img class="menu" id="menu" src="imagens/menu.svg.svg">
+            </div>
         </div>
-        <nav>
-            <a href="index.html">Inicio</a> 
-            <a href="numComp.html">Numeros e Computadores</a> 
-            <a href="playGround.html">Playground</a>
-        </nav>
+            <nav>
+                <div class="navbar-titulo" id="navbar-titulo">
+                    <a href="index.html">Inicio</a> 
+                    <a href="numComp.html">Numeros e Computadores</a> 
+                    <a href="playGround.html">Playground</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <div class="corpo">
         <div class="container-introducao">
@@ -60,6 +67,5 @@
         <h2 class="promove">PROMOVE</h2>
         <h2 class="ic">IC/UFRJ</h2>
     </footer>
-    <script src="index.js"></script> 
 </body>
 </html>

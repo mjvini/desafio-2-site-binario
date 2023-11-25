@@ -30,11 +30,11 @@ header{
 .logo{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     font-family: "honeyfont";
     color: #0E1111;
     margin-left: 10px;
+    margin-top: 10px;
 }
 .logoTitulo{
     margin-left: 10px;
@@ -47,7 +47,7 @@ header{
     font-family: "honeyfont2";
     src: url(fonts/honey2.otf);
 }
-nav{
+.navbar-titulo{
     /*
     display: flex;
     flex-direction: row;
@@ -58,6 +58,7 @@ nav{
     align-items: flex-start;
     gap: 75px;
     font-family: "honeyfont2";
+    margin-top: 7px;
     /*border-radius: 50%;
     background-color: #fff;
     box-shadow:
@@ -66,13 +67,21 @@ nav{
         0 0 140px 90px #0ff;*/
     
 }
+
+.menu-container{
+    margin-right: 20px;
+    margin-top: 20px;
+    display: none;
+    cursor: pointer
+}
+
 a{
     color: #FBBA02;
     margin: 10px;
     font-size: 20px;
 }
 
-a:hover{
+a:hover, .menu:hover{
     /*color: white;*/
     transform: scale(1.2);
     
@@ -121,6 +130,32 @@ footer{
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .logo-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+    }
+    header{
+        flex-direction: column;
+    }
+    .navbar-titulo{
+        width: 100%;
+        gap: 10px;
+        flex-direction: column;
+        display: none;
+    }
+    .menu-container{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 /* PÁGINA PLAYGROUND */
@@ -209,6 +244,7 @@ footer{
     background-color: #0E1111;
     border-style: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -221,4 +257,47 @@ footer{
         0 0 60px 2px #fff,
         0 0 100px 5px rgb(251, 255, 0),
         0 0 140px 7px rgb(255, 123, 0);
+}
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 1000px) {
+    .container-introducao{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem-abelha{
+        height: 243px;
+        width: 242px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .playground{
+        flex-direction: column;
+    }
+    .textotraduzido-container{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .textinput{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .textoAbelha{
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+    }
+    .container-texto{
+        height: 155px;
+        width: 314px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        vertical-align: middle;
+        text-align: center;
+    }
 }
