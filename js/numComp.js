@@ -42,3 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateText();
 });
+
+function checkAnswer() {
+    var userInput = document.getElementById('userInput').value;
+    var correctAnswer = "1*100 + 0*10 + 0*1";
+
+    if (userInput === correctAnswer) {
+        document.getElementById('resultMessage').innerText = "Parabéns! Resposta correta!";
+    } else {
+        document.getElementById('resultMessage').innerText = "Ops! Tente novamente.";
+    }
+}

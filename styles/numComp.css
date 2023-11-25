@@ -17,6 +17,11 @@ body{
     grid-template-rows: 1fr 14fr 4fr;
 }
 */
+
+body{
+    background-color: #FDBE33;
+}
+
 @font-face {
     font-family: "honeyfont";
     src: url(fonts/honey.ttf);
@@ -66,6 +71,9 @@ header{
 }
 .logoImagem{
     background-color:#FBBA02;
+    width: 30px;
+    height: 30px;
+    
 }
 
 nav{
@@ -139,14 +147,13 @@ a:hover{
 
 .container-1{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 535px;
-    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 833px;
+    height: 300px;
     align-items: center;
-    scale: 1.5;
-    padding-bottom: 80px;
 }
+
 
 .abelha1{
     width: 261px;
@@ -249,7 +256,6 @@ a:hover{
     align-items: center;
     height: 549px;
     border: 4px solid #0E1111;
-    justify-content:center;
 }
 
 .container-3{
@@ -283,9 +289,11 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    top: 118px;
+    margin-top: -4px;
     height: 518px;
     border: 4px solid #0E1111;
+    line-height: 518px;
+    
 }
 
 .container-texto5{
@@ -305,12 +313,12 @@ a:hover{
     height: 400px;
     width: 300px;
 }
+
 .corpo-6{
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end; 
-    margin-top: auto; 
-    height: 262px;
+    flex-direction: row-reverse;
+    align-items: center; 
+    height: 264px;
 }
 
 .meu-botao{
@@ -329,13 +337,23 @@ a:hover{
 
 
 .corpo-7{
+    display: flex;
     height: 132px;
+    align-items: center;
+    background-color: #0E1111;
+    justify-content: center;
+   
+}
+
+.PI-3{
+    display: flex;
+    flex-direction: column;
 }
 
 .speech-balloon {
     position: relative;
-    height: auto;
     max-width: 500px;
+    max-height: 100px;
     padding: 10px 20px;
     background-color: #f0f0f0;
     border-radius: 5px;
@@ -346,12 +364,21 @@ a:hover{
     content: '';
     position: absolute;
     top: 50%;
-    left: -20px;
+    left: -20px; /* Adjust the position to make it point to the left */
     margin-top: -10px;
     border-width: 10px;
     border-style: solid;
     border-color: transparent #f0f0f0 transparent transparent;
 }
+
+.botao-inverte{
+    background-color: #0E1111;
+    border-style: none;
+    border-radius: 20px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
 
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
@@ -362,9 +389,17 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 74px;
     background: #0E1111;
+   
     
+}
+
+.oferecimento{
+    display: flex;
+    flex-direction: row;
+    width: 313px;
+    height: 30px;
+    justify-content: space-between;
 }
 
 .promove{
@@ -376,6 +411,7 @@ footer{
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
+    
 }
 .ic{
     color: #FBBA02;
