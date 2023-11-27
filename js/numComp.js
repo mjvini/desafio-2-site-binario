@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var speechBubbles = document.querySelectorAll('.speech-bubble');
+
+    speechBubbles.forEach(function (bubble) {
+      var textParts = bubble.querySelectorAll('.text-part');
+      var currentIndex = 0;
+
+      bubble.addEventListener('click', function () {
+        textParts[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % textParts.length;
+        textParts[currentIndex].style.display = 'inline';
+      });
+    });
+  });
+
+document.addEventListener('DOMContentLoaded', function () {
 
     var speechBalloon = document.getElementById('speechBalloon');
     var textElement = document.getElementById('text');

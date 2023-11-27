@@ -17,7 +17,6 @@
 
 
 <body>
-
     <header>
         <div class="logo">
             <img class="logoImagem" src="imagens/logotipo.png" alt="pote de mel com abelha" width="30" height="30"> 
@@ -29,6 +28,7 @@
             <a href="numComp.html">Numeros e Computadores</a> 
             <a href="playGround.html">Playground</a>
         </nav>
+        
         <a class="nossaEquipe" href="nossaequipe.html">Nossa Equipe </a>
     </header>
 
@@ -38,68 +38,112 @@
         
         <div class="container-2">
         <img class="abelha1" src="imagens/abelhaQuadro.png" alt="pote de mel com abelha">
-        <p class="texto-abelha1"> SISTEMAS DE NUMERAÇÃO</p>
+        <p class="texto-abelha2"> SISTEMAS DE NUMERAÇÃO</p>
         </div>
     </div>
 
     <div class="corpo-4">
         <div class="container-3">
             <img class="abelha2" src="imagens/abelhaFeliz2.png" alt="abelha feliz">
-            <div class="speech-balloon" id="speechBalloon">
-                <p id="text"></p>
-            </div>
+            <div class="speech-bubble">
+                <div class="text-container">
+                  <span class="text-part">CLIQUE PARA COMEÇAR</span>
+                  <span class="text-part">Bzzz!  Zumbidos curiosos, amiguinhos! Vamos falar sobre a base decimal, que é como falamos os números no dia a dia.</span>
+                  <span class="text-part">Vocês já devem estar acostumados...</span>
+                  <span class="text-part">Na base decimal, usamos dez algarismos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Vamos ver o número 29, por exemplo...</span>
+                  <span class="text-part">Nele o \"2\" está na casa das dezenas, e o "9" está na casa das unidades.</span>
+                  <span class="text-part">Isso quer dizer que o número 29 é o mesmo que (2*10) + (9*1). Simples, né?...</span>
+                  <span class="text-part">Agora vamos olhar para o número 99. Se somarmos 1 temos 100, certo? Mas por que será?...</span>
+                  <span class="text-part">Na base decimal a casa mais à direita representa o 1 (a casa das unidades),</span>
+                  <span class="text-part">e cada casa que adicionamos à esquerda é 10 vezes maior que a anterior...</span>
+                  <span class="text-part">Em 99 temos o "9" na casa das dezenas e o "9" na casa das unidades, isso é o mesmo que (9*10) + (9*1),</span>
+                  <span class="text-part">exatamente igual no 29.</span>
+                  <span class="text-part">A nossa maior casa em 99 vale 10, a casa das dezenas, então adicionamos mais uma: essa vale 100!!...</span>
+                  <span class="text-part">Agora fica fácil: 100 na base decimal é o mesmo que (1 * 100) + (0 * 10) + (0 * 1), ou seja, 100+0+0.</span>
+                  <span class="text-part">Demais, não é mesmo?...</span>
+                  <span class="text-part">Não é legal ver como os números do nosso dia a dia funcionam?</span>
+                  <span class="text-part"> Vamos entender mais um pouco sobre eles no balãozinho debaixo! Bzzz!</span>
+                </div>
+              </div>
         </div>
     </div>
 
-    
-    
-</div>
-
-
-<div class="pag PI-3">
-    
-    
     <div class="pag PI-3">
-        
-        
-        <div class="corpo-5">
-            
-            <input type="text" placeholder="Insira o número" size="17">
-            <div class="botao">
-                <button class="botao-inverte" id="botao-inverte" onclick="checkAnswer()">
-                    <img src="imagens/seta.svg">
-                </button>
+        <div class="pag PI-3">
+            <div class="corpo-5">
+                
+                <input type="text" placeholder="Insira o número" size="17">
+                <div class="botao">
+                    <button class="botao-inverte" id="botao-inverte" onclick="checkAnswer()">
+                        <img src="imagens/seta.svg">
+                    </button>
+                </div>
+                <textarea si></textarea>
+                
+                
+                <img class="abelhafeliz" src="imagens/abelhaFeliz.png" alt="abelha feliz">
+                
             </div>
-            <textarea si></textarea>
             
-            
-            <img class="abelhafeliz" src="imagens/abelhaFeliz.png" alt="abelha feliz">
-            
-        </div>
-        
 
-            
-    </div>
-        
-        <div class="corpo-4">
-            <div class="container-3">
-                <div class="speech-balloon" id="speechBalloon">
-                    <p id="text"></p>
-                    <img class="abelha2" src="imagens/abelhaFeliz2.png" alt="abelha feliz">
+            <div class="corpo-4">
+                <div class="container-3">
+                    <div class="speech-bubble">
+                        <div class="text-container">
+                            <span class="text-part">CLIQUE PARA COMEÇAR</span>
+                            <span class="text-part">Bzzz! Zumbidos beenários, amiguinhos! Vamos agora desbravar os segredos da base binária. </span>
+                            <span class="text-part">Essa é uma linguagem diferente, mas igualmente fascinante. Cá entre nós, essa é a minha preferida!</span>
+                            <span class="text-part">Na base binária, usamos apenas dois algarismos: 0 e 1. É como se fossem os "sim" e "não" dos números. </span>
+                            <span class="text-part">Imaginem, cada número é formado apenas por esses dois dígitos!</span>
+                            <span class="text-part">Aqui, a casa mais à direita ainda vale 1, mas diferente do sistema decimal, dobramos o valor de cada casa adicionada.</span>
+                            <span class="text-part">Vejam:  se esbarramos no número 100, a casa onde está o "0" à direita vale 1, o próximo "0" está na segunda casa,</span>
+                            <span class="text-part">que vale 2, e o último "1" está na terceira, que vale 4.</span>
+                            <span class="text-part">Traduzindo, o número 101 é (1 * 4) + (0 * 2) + (0 * 1).</span>
+                            <span class="text-part">Fácil, né?  No início pode parecer um pouco confuso, mas com o tempo a gente se acostuma.</span>
+                            <span class="text-part">Agora, vamos explorar o 1101. Aqui, o "1" está nas primeira casa, o próximo "0" na segunda,</span>
+                            <span class="text-part">o próximo "1" na terceira e o último "1" na quarta. Isso se traduz em (1 * 8) + (1 * 4) + (0 * 2) + (1 * 1),</span>
+                            <span class="text-part">o mesmo que 13. Incrível, não acham?</span>
+                            <span class="text-part">Bzzz! Incrível como os zeros e uns se combinam para criar todos esses números na base binária, não é mesmo?</span>
+                            <span class="text-part">Nessa base conseguimos escrever qualquer número e é ela que o computador usa no dia a dia!</span>
+                            <span class="text-part">Continuem zumbindo por aqui, por que na próxima seção vamos entender como esses números são usados</span>
+                            <span class="text-part">para formar palavras!</span>
+                            <span class="text-part">Bzzz!</span>
+                        </div>
+                    </div>
+                    <img class="abelhafeliz" src="imagens/abelhaFeliz.png" alt="abelha feliz">
+                    </div>
                 </div>
+
+                <div class="corpo-4">
+                    <div class="container-3">
+                        <img class="abelha2" src="imagens/abelhaFeliz2.png" alt="abelha feliz">
+                        <div class="speech-bubble">
+                            <div class="text-container">
+                                <span class="text-part">CLIQUE PARA COMEÇAR</span>
+                                <span class="text-part">Bzzz! Zumbidos beenários, amiguinhos! Vamos agora desbravar os segredos da base binária. </span>
+                                <span class="text-part">Essa é uma linguagem diferente, mas igualmente fascinante. Cá entre nós, essa é a minha preferida!</span>
+                                <span class="text-part">Na base binária, usamos apenas dois algarismos: 0 e 1. É como se fossem os "sim" e "não" dos números. </span>
+                                <span class="text-part">Imaginem, cada número é formado apenas por esses dois dígitos!</span>
+                                <span class="text-part">Aqui, a casa mais à direita ainda vale 1, mas diferente do sistema decimal, dobramos o valor de cada casa adicionada.</span>
+                                <span class="text-part">Vejam:  se esbarramos no número 100, a casa onde está o "0" à direita vale 1, o próximo "0" está na segunda casa,</span>
+                                <span class="text-part">que vale 2, e o último "1" está na terceira, que vale 4.</span>
+                                <span class="text-part">Traduzindo, o número 101 é (1 * 4) + (0 * 2) + (0 * 1).</span>
+                                <span class="text-part">Fácil, né?  No início pode parecer um pouco confuso, mas com o tempo a gente se acostuma.</span>
+                                <span class="text-part">Agora, vamos explorar o 1101. Aqui, o "1" está nas primeira casa, o próximo "0" na segunda,</span>
+                                <span class="text-part">o próximo "1" na terceira e o último "1" na quarta. Isso se traduz em (1 * 8) + (1 * 4) + (0 * 2) + (1 * 1),</span>
+                                <span class="text-part">o mesmo que 13. Incrível, não acham?</span>
+                                <span class="text-part">Bzzz! Incrível como os zeros e uns se combinam para criar todos esses números na base binária, não é mesmo?</span>
+                                <span class="text-part">Nessa base conseguimos escrever qualquer número e é ela que o computador usa no dia a dia!</span>
+                                <span class="text-part">Continuem zumbindo por aqui, por que na próxima seção vamos entender como esses números são usados</span>
+                                <span class="text-part">para formar palavras!</span>
+                                <span class="text-part">Bzzz!</span>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
             </div>
+
+        <script src="/js/NumComp.js"></script> 
         </div>
-        
-        <div class="corpo-7">
-            <footer>
-                <div class="oferecimento">
-                    <h2 class="promove">PROMOVE</h2>
-                    <h2 class="ic">IC/UFRJ</h2>
-                </div>
-            </footer>
-        </div>
-        
-    <script src="/js/NumComp.js"></script> 
-    </div>
-</body>
+    </body>
 </html>

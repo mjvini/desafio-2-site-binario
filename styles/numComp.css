@@ -154,10 +154,18 @@ a:hover{
     align-items: center;
 }
 
+.container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
 
 .abelha1{
     width: 261px;
     height: 300px;
+    scale: 1.4;
 }
 
 .texto-abelha1{
@@ -280,6 +288,7 @@ a:hover{
     text-align: center;
     font-family: "Poppins";
     font-size: 30px;
+    font-weight: 600;
     
 }
 
@@ -359,6 +368,52 @@ a:hover{
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 40px;
+    min-width: 750px;
+  }
+
+  .text-container {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .text-part {
+    display: none;
+    animation: revealText 3s steps(30) forwards;
+  }
+
+
+  @keyframes revealText {
+    0% {
+      width: 0%;
+    }
+    33.33% {
+      width: 100%;
+    }
+  }
+  .speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjust the position to make it point to the left */
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #f0f0f0 transparent transparent;
+}
+
+  .hidden {
+    display: none;
+  }
 
 .speech-balloon:after {
     content: '';
