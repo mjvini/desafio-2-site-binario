@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.cdnfonts.com/css/honey-bee-2" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play Ground</title>
+        <link rel="stylesheet" href="styles/playground.css">
+        <link href="https://fonts.cdnfonts.com/css/honey-bee-2" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/led-dot-matrix" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="imagex/png" href="imagens/logotipo.png">
+    </head>
 <body>
     <header>
         <div class="logo">
-            <img class="logoImagem" src="imagens/Vector.svg" alt="pote de mel com abelha" width="30" height="30"> 
+            <img class="logoImagem" src="imagens/logotipo.png" alt="pote de mel com abelha" width="30" height="30"> 
             <h1 class="logoTitulo">Beenário</h1>
         </div>
-        <nav>
+        
+        <nav class="nav-itens">
             <a href="index.html">Inicio</a> 
             <a href="numComp.html">Numeros e Computadores</a> 
             <a href="playGround.html">Playground</a>
         </nav>
+        <a class="nossaEquipe" href="nossaequipe.html">Nossa Equipe </a>
     </header>
+
     <div class="corpo">
+        <div class="container-introducao">
+            <div class="container-texto">
+                <p class="textoAbelha">"ZzZzZz! Agora que você já conhece os números, que tal misturá-los com palavrinhas mágicas? 🐝✨"</p>
+            </div>
+            <img class="imagem-abelha"src="imagens/abelhaJoinha.png">
+        </div>
+        <div class="playground">
+            <div class="textotraduzido-container">
+                <div class="linguagem">
+                    <p id="linguagem1"> Binário </p>
+                </div>
+                <textarea type="text" class="textinput" id="textinput" placeholder="Digite aqui!" maxlength="1000"></textarea>
+            </div>
 
+            <div class="botao">
+                <button class="botao-inverte" id="botao-inverte">
+                    <img src="imagens/seta-inverte.svg">
+                </button>
+            </div>
+
+            <div class="textotraduzido-container">
+                <div class="linguagem">
+                    <p id="linguagem2"> Texto </p>
+                </div>
+                <idv class="textotraduzido" id="textotraduzido"> </idv>
+            </div>
+        </div>
     </div>
-    <footer>
 
+    <footer>
+            <div class="oferecimento">
+                <h2 class="promove">PROMOVE</h2>
+                <h2 class="ic">IC/UFRJ</h2>
+            </div>
     </footer>
-    <script src="index.js"></script> 
+    <script src="playground.js"></script>
 </body>
 </html>

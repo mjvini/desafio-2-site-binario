@@ -1,0 +1,330 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr auto 2fr;
+    min-height: 100vh;
+    grid-template-areas:
+    "header"
+    "container-corpo"
+    "footer";
+    background-color: #FDBE33;
+}
+
+
+@font-face {
+    font-family: "honeyfont";
+    src: url(fonts/honey.ttf);
+}
+
+@font-face {
+    font-family:'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+ }
+
+ @font-face {
+    font-family: "honeyfont2";
+    src: url(fonts/honey2.otf);
+}
+
+/*------------------------------------------ INICIO DO HEADER -----------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E1111;
+    height: 50px;
+    grid-area: header;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "honeyfont";
+    color: #0E1111;
+    margin-left: 10px;
+    width: 152px;
+    height: 38px;
+    
+}
+
+.logoTitulo{
+    margin-left: 10px;
+    color: #FBBA02;
+    font-family: "Poppins";
+    font-size: 25px;
+}
+.logoImagem{
+    background-color:#FBBA02;
+    width: 30px;
+    height: 30px;
+    
+}
+
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Inter";
+    position:relative;
+    width: 506px;
+    height: 20px;
+    
+    
+}
+
+
+a{
+    color: #FBBA02;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nossaEquipe{
+    font-family: "Inter";
+    font-size: 12px;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+}
+/*------------------------------  FIM DO HEADER -------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------  CORPO ---------------------------------------------------------------*/
+
+.corpo{
+    background-color: #FBBA02;
+}
+
+/*------------------------------ FIM CORPO ------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------  FOORTER  ------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0E1111;
+   
+    grid-area: footer;
+}
+
+.oferecimento{
+    display: flex;
+    flex-direction: row;
+    width: 313px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.promove{
+    color: #FBBA02;
+    text-align: center;
+    font-family: LED Dot-Matrix;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    
+}
+.ic{
+    color: #FBBA02;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .logo-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+    }
+    header{
+        flex-direction: column;
+    }
+    .navbar-titulo{
+        width: 100%;
+        gap: 10px;
+        flex-direction: column;
+        display: none;
+    }
+    .menu-container{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* PÁGINA PLAYGROUND */
+
+.container-introducao{
+    display: flex;
+    height: 425px;
+    justify-content: center;
+}
+
+.textoAbelha{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.container-texto{
+    height: 139px;
+    width: 486px;
+    margin-top: 143px;
+    vertical-align: middle;
+}
+
+.imagem-abelha{
+    height: 326px;
+    width: 327px;
+    margin-left: 57px;
+    margin-top: 52px;
+}
+
+.playground{
+    height: 425px;
+    border-style: solid;
+    border-color: #0E1111;
+    border-width: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.textotraduzido-container{
+    margin-right: 35px;
+    margin-left: 35px;
+    width: 412px;
+    height: 182px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: scroll;
+    overscroll-behavior: none;
+}
+
+.linguagem{
+    width: 412px;
+    height: 43px;
+    background-color: #0E1111;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #FBBA02;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 20px;
+    padding-top: 4px;
+}
+
+.textotraduzido{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.textinput{
+    width: 412px;
+    height: 139px;   
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-indent: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    resize: none;
+    outline: none;
+}
+
+.botao-inverte{
+    background-color: #0E1111;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.botao-inverte:hover{
+    transform: scale(1.2);
+    /*
+    color: white;
+    background-color: none;
+    box-shadow:
+        0 0 60px 2px #fff,
+        0 0 100px 5px rgb(251, 255, 0),
+        0 0 140px 7px rgb(255, 123, 0);*/
+}
+
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 1000px) {
+    .container-introducao{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem-abelha{
+        height: 243px;
+        width: 242px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .playground{
+        flex-direction: column;
+    }
+    .textotraduzido-container{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .textinput{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .textoAbelha{
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+    }
+    .container-texto{
+        height: 155px;
+        width: 314px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
