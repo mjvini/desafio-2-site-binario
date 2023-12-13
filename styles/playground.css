@@ -91,6 +91,12 @@ nav{
     
 }
 
+.menu-container{
+    margin-right: 20px;
+    margin-top: 20px;
+    display: none;
+    cursor: pointer
+}
 
 a{
     color: #FBBA02;
@@ -106,12 +112,18 @@ a{
     width: 80px;
     height: 30px;
 }
+.menu-btn{
+    display: none;
+}
 /*------------------------------  FIM DO HEADER -------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------  CORPO ---------------------------------------------------------------*/
 
 .corpo{
     background-color: #FBBA02;
+}
+.aviso-celular{
+    display: none;
 }
 
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
@@ -159,6 +171,7 @@ footer{
 }
 
 @media (max-width: 700px) {
+    /*
     .logo-menu{
         display: flex;
         justify-content: space-between;
@@ -169,7 +182,7 @@ footer{
     header{
         flex-direction: column;
     }
-    .navbar-titulo{
+    .nav-itens{
         width: 100%;
         gap: 10px;
         flex-direction: column;
@@ -181,7 +194,43 @@ footer{
     footer{
         flex-direction: column;
         gap: 32px;
-    }
+    }*/
+
+    .nav-itens{
+        display: none;
+        width: 100%;
+        gap: 10px;
+        flex-direction: column;
+        display: none;
+       }
+    
+       .nossaEquipe{
+        display: none;
+       }
+    
+       .logoImagem{
+        display: none;
+       }   
+    
+       .menu-btn{
+        display: block;
+        margin-right: 20px;
+       }
+       .aviso-celular{
+        display: flex;
+        align-items: center;
+        }
+        .aviso{
+            font-family: "Inter";
+        }
+        .abelhinha-prof{
+            width: 200px;
+            height: 200px;
+        }
+       .corpo{
+        display: none;
+       }
+
 }
 
 /* PÁGINA PLAYGROUND */
@@ -287,7 +336,7 @@ footer{
 
 
 /* RESPONSIVIDADE*/
-
+/*
 @media (max-width: 1000px) {
     .container-introducao{
         margin-top: 20px;
@@ -327,4 +376,4 @@ footer{
         vertical-align: middle;
         text-align: center;
     }
-}
+}*/

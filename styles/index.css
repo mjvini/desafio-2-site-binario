@@ -90,7 +90,6 @@ nav{
     width: 506px;
     height: 20px;
     
-    
 }
 
 
@@ -109,20 +108,9 @@ a{
     height: 30px;
 }
 
-/*
-a:hover{
-    color: white;
-    transform: scale(1.2);
-    
-    background-color: none;
-    box-shadow:
-        0 0 60px 2px #fff,
-        0 0 100px 5px rgb(251, 255, 0),
-        0 0 140px 7px rgb(255, 123, 0);
+.menu-btn{
+    display: none;
 }
-*\
-
-
 
 /*------------------------------  FIM DO HEADER -------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
@@ -158,6 +146,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     width: 833px;
     height: 300px;
     align-items: center;
@@ -356,6 +345,9 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+.aviso-celular{
+    display: none;
+}
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------  FOORTER  ------------------------------------------------------------*/
@@ -398,4 +390,46 @@ footer{
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+}
+
+/*---------------------- Celular ----------------------------*/
+@media only screen and (max-width: 768px){
+    
+   /*---- Header ------*/
+    
+
+   .nav-itens{
+    display: none;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    display: none;
+   }
+
+   .nossaEquipe{
+    display: none;
+   }
+
+   .logoImagem{
+    display: none;
+   }   
+
+   .menu-btn{
+    display: block;
+    margin-right: 20px;
+   }
+   .aviso-celular{
+    display: flex;
+    align-items: center;
+    }
+    .aviso{
+        font-family: "Inter";
+    }
+    .abelhinha-prof{
+        width: 200px;
+        height: 200px;
+    }
+   .container-corpo{
+    display: none;
+   }
 }

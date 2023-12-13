@@ -105,7 +105,9 @@ a{
     height: 30px;
 }
 
-
+.menu-btn{
+    display: none;
+}
 
 
 .container{
@@ -211,6 +213,10 @@ a{
     margin: 0px;
 }
 
+.aviso-celular{
+    display: none;
+}
+
 footer{
     width: 100%;
     display: flex;
@@ -250,3 +256,44 @@ footer{
     line-height: normal;
     text-transform: uppercase;
 }
+/*---------------------- Celular ----------------------------*/
+@media only screen and (max-width: 768px){
+    
+    /*---- Header ------*/
+     
+ 
+    .nav-itens{
+     display: none;
+     width: 100%;
+     gap: 10px;
+     flex-direction: column;
+     display: none;
+    }
+ 
+    .nossaEquipe{
+     display: none;
+    }
+ 
+    .logoImagem{
+     display: none;
+    }   
+ 
+    .menu-btn{
+     display: block;
+     margin-right: 20px;
+    }
+    .aviso-celular{
+     display: flex;
+     align-items: center;
+     }
+     .aviso{
+         font-family: "Inter";
+     }
+     .abelhinha-prof{
+         width: 200px;
+         height: 200px;
+     }
+    .container{
+     display: none;
+    }
+ }

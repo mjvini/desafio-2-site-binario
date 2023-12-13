@@ -97,7 +97,7 @@ window.onload = function() {
 
     // ANIMAÇÃO HEADER
     const menu =document.getElementById('menu');
-    const navbar = document.getElementById('navbar-titulo')
+    const navbar = document.getElementById('nav-itens')
 
     var cont = 0;
 
