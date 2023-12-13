@@ -1,17 +1,8 @@
-/*
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('overlay').style.display = 'flex';
-});
-
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('overlay').style.display = 'none';
-}); */
-
 document.addEventListener("DOMContentLoaded", function(){
     let botao = document.querySelector(".menu-btn");
     let navbar = document.querySelector(".overlay");
     let logo = document.querySelector(".logo");
-    let corpoPagina = document.querySelector(".container-corpo");
+    let corpoPagina = document.querySelector(".container");
 
     botao.addEventListener("click", function(){
         if (navbar.classList.contains("visivel")) {

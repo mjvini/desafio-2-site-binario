@@ -1,12 +1,3 @@
-/*
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('overlay').style.display = 'flex';
-});
-
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('overlay').style.display = 'none';
-}); */
-
 document.addEventListener("DOMContentLoaded", function(){
     let botao = document.querySelector(".menu-btn");
     let navbar = document.querySelector(".overlay");

@@ -66,12 +66,12 @@ header{
 
 .logoTitulo{
     margin-left: 10px;
-    color: #FBBA02;
+    color: #FDBE33;
     font-family: "Poppins";
     font-size: 25px;
 }
 .logoImagem{
-    background-color:#FBBA02;
+    background-color:#FDBE33;
     width: 30px;
     height: 30px;
     
@@ -99,7 +99,7 @@ nav{
 }
 
 a{
-    color: #FBBA02;
+    color: #FDBE33;
     margin: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -120,12 +120,12 @@ a{
 /*------------------------------  CORPO ---------------------------------------------------------------*/
 
 .corpo{
-    background-color: #FBBA02;
+    background-color: #FDBE33;
 }
 .aviso-celular{
     display: none;
 }
-
+.overlay{display: none;}
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------  FOORTER  ------------------------------------------------------------*/
@@ -150,7 +150,7 @@ footer{
 }
 
 .promove{
-    color: #FBBA02;
+    color: #FDBE33;
     text-align: center;
     font-family: LED Dot-Matrix;
     font-size: 32px;
@@ -161,7 +161,7 @@ footer{
     
 }
 .ic{
-    color: #FBBA02;
+    color: #FDBE33;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -215,6 +215,7 @@ footer{
        .menu-btn{
         display: block;
         margin-right: 20px;
+        z-index: 1;
        }
        .aviso-celular{
         display: flex;
@@ -229,6 +230,21 @@ footer{
         }
        .corpo{
         display: none;
+       }
+       .overlay{
+        display: none;
+        flex-direction: column;
+        background-color: #0E1111;
+        align-items: center;
+        overflow-y: auto;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+       }
+       .overlay.visivel{
+        display: flex;
        }
 
 }
@@ -287,7 +303,7 @@ footer{
     background-color: #0E1111;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    color: #FBBA02;
+    color: #FDBE33;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     text-indent: 20px;

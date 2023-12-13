@@ -435,6 +435,8 @@ a{
 .aviso-celular{
     display: none;
 }
+.overlay{display: none;}
+
 /*------------------------------ FIM CORPO ------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------  FOORTER  ------------------------------------------------------------*/
@@ -504,6 +506,7 @@ footer{
     .menu-btn{
      display: block;
      margin-right: 20px;
+     z-index: 1;
     }
     .aviso-celular{
      display: flex;
@@ -518,5 +521,20 @@ footer{
      }
     .container-corpo{
      display: none;
+    }
+    .overlay{
+        display: none;
+        flex-direction: column;
+        background-color: #0E1111;
+        align-items: center;
+        overflow-y: auto;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+    }
+    .overlay.visivel{
+        display: flex;
     }
  }
